@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 
 require "vendor/autoload.php";
 use PHPHtmlParser\Dom;
-include ('./data/koneksi.php');
-include ('./model/Artikel.php');
+include ('../data/koneksi.php');
+include ('../model/Artikel.php');
 include ('simple_html_dom.php');
 $start = @($_GET['start'])?$_GET['start']:0;
 $end = @($_GET['end'])?$_GET['end']:9;
