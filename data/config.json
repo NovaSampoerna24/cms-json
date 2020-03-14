@@ -1,0 +1,6 @@
+{
+    "base_url"      : "http://game.ngroot.site",
+    "nama_aplikasi" : "Ngroot Game",
+    "deskripsi"     : "Cara mendapat informasi game terbaru",
+    "url_database"  : "http://localhost/gamengroot/data/tb_artikel.json"
+}
