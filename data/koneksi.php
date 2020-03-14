@@ -14,7 +14,7 @@ function artikel(){
     return $json;
 }
 function config(){
-    $data = file_get_contents("https://gamengroot.herokuapp.com/data/config.json",true);
+    $data = file_get_contents("http://game.ngroot.site/data/config.json",true);
     $json = json_decode($data, true);
     return $json;
 }
