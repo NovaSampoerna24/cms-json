@@ -11,7 +11,7 @@ include ('model/Artikel.php');
 
     $today = date('Y-m-d');
     $status = 'aktif';
-    $today = '2020-10-10';
+    // $today = '2020-10-10';
   
     $crontimelama = file_get_contents('data/crontime.json');
     $value = json_decode($crontimelama);
