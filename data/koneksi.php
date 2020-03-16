@@ -144,4 +144,46 @@ function ngindex($url){
     return null;
     
 }
+function ngindex2($url){
+    require "vendor/autoload.php";
+    $client = new Google_Client();
+    // service_account_file.json is the private key that you created for your service account.
+    $akunlayanan = config()['akun_layanan']; 
+    $client->setAuthConfig($akunlayanan);
+    $client->addScope('https://www.googleapis.com/auth/indexing');
+
+    // Get a Guzzle HTTP Client
+    $httpClient = $client->authorize();
+    $endpoint = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
+
+    // Define contents here. The structure of the content is described in the next step.
+    $content = "{
+      'url': '$url',
+      'type': 'URL_UPDATED'
+    }";
+    $response = $httpClient->post($endpoint, [ 'body' => $content ]);
+    $status_code = $response->getStatusCode();
+    if($status_code == 200){
+        $message = "Berhasil";
+    }else{
+        $message = "gagal";
+    }
+    $res = [
+        "code"=>$status_code,
+        "message"=>$message,
+        "url"=>$url
+    ];
+    $fileindex = file_get_contents('data/filengindex.json');
+    $filengin = [];
+    $fileindex = json_decode($fileindex);
+    foreach ($fileindex as $key => $value) {
+        $filengin[] = $value;
+    }
+    $fileindex[] = $res;
+     $json_data = json_encode($fileindex);
+    file_put_contents('data/filengindex.json', $json_data);
+    // $dataindex = file_get_contents('data/filengindex.json');
+    return json_encode($res);
+    
+}
 ?>

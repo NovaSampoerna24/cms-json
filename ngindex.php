@@ -8,6 +8,6 @@ include ('model/Artikel.php');
 
 if($_POST){
 $url = $_POST['url'];
-$ngindex = ngindex($url);
+$ngindex = ngindex2($url);
 print_r($ngindex);
 }
