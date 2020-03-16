@@ -198,7 +198,7 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
         <script type="application/json">
 {
           "vars": {
-            "account": "UA-160651157-1"
+            "account": "UA-160651157-2"
           },
           "triggers": {
             "default pageview": {
