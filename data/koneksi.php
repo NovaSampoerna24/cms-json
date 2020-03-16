@@ -2,20 +2,20 @@
 
 
 function database(){
-    $base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+    $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
     $data = file_get_contents("$base_url/data/database.json",true);
     $json = json_decode($data, true);
     return $json;
 }
 function artikel(){
-    $base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+    $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
     $url =  $base_url."/".config()['url_database'];
     $data = file_get_contents($url,true);
     $json = json_decode($data, true);
     return $json;
 }
 function config(){
-    $base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+    $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
     $data = file_get_contents("$base_url/data/config.json",true);
     $json = json_decode($data, true);
     return $json;
@@ -51,7 +51,7 @@ function curlget($url){
     // print_r($result);
 }
 function getdata(){
-    $base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+    $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
     $sumber = file_get_contents('data/sumberan.json');
     $sumber = json_decode($sumber);
     foreach ($sumber as $key => $value) {
