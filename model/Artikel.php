@@ -54,7 +54,7 @@ function getDetailSlug($slug){
         $artikel[] = $d;    
     }
 
-    $data = searchForId($slug, $artikel); 
+    $data = @searchForId($slug, $artikel); 
 
     // $data = $artikel[$slug];
     $response = [
@@ -67,7 +67,6 @@ function getDetailSlug($slug){
 
 // PHP function to illustrate the use of array_search() 
 function searchForId($id, $array) {
-
     foreach ($array as $key => $val) {
         if ($val['slug'] === $id) {
             return $val;
@@ -75,7 +74,4 @@ function searchForId($id, $array) {
     }
     return null;
  }
-
-
-
 ?>

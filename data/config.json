@@ -2,5 +2,6 @@
     "base_url"      : "https://gamengroot.herokuapp.com/",
     "nama_aplikasi" : "Ngroot Game",
     "deskripsi"     : "Cara mendapat informasi game terbaru",
-    "url_database"  : "https://raw.githubusercontent.com/novaariyanto/data_test/master/seputartekno/database.json"
+    "url_database"  : "data/tb_artikel.json",
+    "akun_layanan"  : "data/akunlayanan.json"
 }

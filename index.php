@@ -132,10 +132,12 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
 	<div class="container">
 		<div class="mbr-row mbr-justify-content-center">
     <?php foreach ($data as $key => $value) { 
-      $dom->load($value->content);
-      $a = $dom->find('div');
-      // print_r($a->text);
-      $content =$a->text; // "click here"
+		// print_r($value->content);
+		
+      $a = $dom->load($value->content);
+    //   $a = $dom->find('p');
+	//   print_r($a->text);
+      $content = $a->text; // "click here"
 	  $conten = preg_split('/\.|\?|!/',$content);
 	  if(sizeof($conten) > 1){
 	  	$content ="<b>".$value->title." -</b>". $conten[0].$conten[1];
@@ -210,4 +212,5 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
         }
         </script>
       </amp-analytics>
+	
 </html>

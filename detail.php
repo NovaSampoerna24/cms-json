@@ -9,12 +9,47 @@ $dom = new Dom;
 include ('data/koneksi.php');
 include ('model/Artikel.php');
 
+    $today = date('Y-m-d');
+    $status = 'aktif';
+    $today = '2020-10-10';
+  
+    $crontimelama = file_get_contents('data/crontime.json');
+    $value = json_decode($crontimelama);
+  
+    $tanggallama = $value->tanggal;
+    $statuslama = $value->status;
+    
+    $crontimebaru = file_get_contents('data/crontime.json');
+    $response = json_decode($crontimebaru);
+
+    if($statuslama == 'nonaktif' and $tanggallama != $today){
+        // update data dengan curl 
+        // jika udpate data sukses jalankan function matikan
+        // echo "nnon aktif";
+        aktifkan($today);
+        header("Refresh:0");
+    }else if($statuslama == 'aktif' and $tanggallama == $today){
+        echo "aktif";
+        $getdata = getdata();
+        if($getdata == "berhasil"){
+            matikan($today);
+            header("Refresh:0");
+        }
+    }else if($statuslama == "aktif" and $tanggallama != $today){
+      // echo "status aktif";
+        matikan($today);
+        header("Refresh:0");
+    }else if($statuslama == 'nonaktif' and $tanggallama == $today){
+      // echo $tanggallama;
+      // echo "status nonaktif";
     $uriSegments = explode("/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
     $slug = (@$uriSegments[3]!=""?$uriSegments[3]:$uriSegments[2]); //returns bar
     $data = getDetailSlug($slug);
     $data = json_decode($data)->data;
-    $tag =  $data->tag;
-    $dataTag = explode(",",$tag);
+    // $tag =  $data->tag;
+    // $dataTag = explode(",",$tag);
+    // print_r($data->content);
+    
  
     $dom->load($data->content);
     $image = [];
@@ -77,24 +112,8 @@ include ('model/Artikel.php');
     }
   }
   $content = ampify($content);
-  function ampify($html='') {
 
-    # Replace img, audio, and video elements with amp custom elements
-    $html = str_ireplace(
-        ['<img','<video','/video>','<audio','/audio>'],
-        ['<amp-img','<amp-video','/amp-video>','<amp-audio','/amp-audio>'],
-        $html
-    );
 
-    # Add closing tags to amp-img custom element
-    $html = preg_replace('/<amp-img(.*?)>/', '<amp-img$1></amp-img>',$html);
-
-    # Whitelist of HTML tags allowed by AMP
-    $html = strip_tags($html,'<h1><h2><h3><h4><h5><h6><a><p><ul><ol><li><blockquote><q><cite><ins><del><strong><em><code><pre><svg><table><thead><tbody><tfoot><th><tr><td><dl><dt><dd><article><section><header><footer><aside><figure><time><abbr><div><span><hr><small><br><amp-img><amp-audio><amp-video><amp-ad><amp-anim><amp-carousel><amp-fit-rext><amp-image-lightbox><amp-instagram><amp-lightbox><amp-twitter><amp-youtube>');
-
-    return $html;
-
-}
 
  
 ?>
@@ -135,6 +154,7 @@ author: aghassemi
       <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
       <link rel="canonical" href="<% canonical %>">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
       <!-- ## Metadata -->
       <!-- The Top Stories carousel requires schema.org markup for one of the following types: Article, NewsArticle, BlogPosting, or VideoObject. [Learn more](https://developers.google.com/structured-data/carousels/top-stories#markup_specification).  -->
@@ -174,7 +194,10 @@ author: aghassemi
       <style amp-custom>
         body {
           padding:16px;
+          font-family: sans-serif;
+          
         }
+
         :root {
           --color-primary: #005AF0;
           --color-text-light: #fff;
@@ -343,3 +366,4 @@ author: aghassemi
 
     </body>
   </html>
+      <?php } ?>
