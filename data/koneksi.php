@@ -186,4 +186,24 @@ function ngindex2($url){
     return json_encode($res);
     
 }
+function aduk($content){
+
+    $dataspin = file_get_contents('data/spinkata.json');
+    $dataspin = json_decode($dataspin);
+    // print_r($dataspin);
+    $kata = [];
+    foreach ($dataspin as $key => $value) {
+        $kata[key($value)] = array_values((array)$value)[0];
+    }
+    $data = spin($content,$kata);
+    return $data;
+}
+function spin($content,$replaceThis){
+    $originalText = $content;
+
+    $replacedText = str_replace(array_keys($replaceThis), $replaceThis,$originalText);
+  
+    return $replacedText;
+}
+
 ?>

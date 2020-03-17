@@ -1,5 +1,5 @@
 <?php 
-include ('data/koneksi.php');
+
 
 if($_POST){
     
