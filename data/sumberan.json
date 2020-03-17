@@ -3,13 +3,14 @@
         "url":"https://gamebrott.com/",
         "type":"wordpress"
     },
-    {
-        "url":"https://mikirtekno.com",
-        "type":"wordpress"
-    },
+    
     {
         "url":"https://bacacoding.blogspot.com/",
         "type":"blogger",
         "idblog":"7748640033295640944"
+    },
+    {
+        "url":"https://selular.id/",
+        "type":"wordpress"
     }
 ]

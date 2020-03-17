@@ -21,7 +21,7 @@ include ('model/Artikel.php');
     
     $crontimebaru = file_get_contents('data/crontime.json');
     $response = json_decode($crontimebaru);
-
+  // print_r($response);
     if($statuslama == 'nonaktif' and $tanggallama != $today){
         // update data dengan curl 
         // jika udpate data sukses jalankan function matikan
@@ -79,6 +79,11 @@ include ('model/Artikel.php');
   if(sizeof($conten) > 1){
     foreach($conten as $ct){
       // print_r($key);
+       $nilai = sizeof($conten);
+      $lipat = 6;
+      if($bagi = $key % $lipat == 0){
+        $ct = "<br><br>".$ct;
+      }
       if($key == 4){
       
         //  $conten .= "hahaha".$ct;
@@ -94,8 +99,14 @@ include ('model/Artikel.php');
     }
    
   }else{
-  $conten = preg_split('/\|\?|!/',$data->content);
-    foreach ($conten as $key => $ct) {
+  $conten =preg_split('/(<\s*p\s*\/?>)|(<\s*br\s*\/?>)|(\s\s+)|(<\s*\/p\s*\/?>)/', $data->content, -1, PREG_SPLIT_NO_EMPTY);
+     
+  foreach ($conten as $key => $ct) {
+       $nilai = sizeof($conten);
+      $lipat = 1;
+      if($bagi = $key % $lipat == 0){
+        $ct = "<br><br>".$ct;
+      }
       // print_r($key);
       if($key == 2){
 
@@ -111,7 +122,7 @@ include ('model/Artikel.php');
       
     }
   }
-  $content = ampify($content);
+  $content = ampify($content,$data->title,$data->sumber);
 
 
 

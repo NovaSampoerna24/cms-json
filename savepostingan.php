@@ -21,7 +21,17 @@ function save($data){
     foreach ($database as $key => $value) {
         $artikel[] = $value;
     }
-    $artikel[]=$data;
+    $artikel[]=[
+        'content_id' => $data['content_id'],
+        'title' => $data['title'],
+        'content'=> $data['content'],
+        'thumb'=>$data['thumb'],
+        'tag'=> @$data['tag'],
+        'id'=> $data['id'],
+        'sumber'=>$data['sumber'],
+        'slug'=>format_uri($data['title'],'-'),
+        'waktu'=>date('Y-m-d h:m:s')
+    ];
 
     $json_data = json_encode($artikel);
     file_put_contents('data/tb_artikel.json', $json_data);
@@ -30,3 +40,4 @@ function save($data){
     $ngindex = ngindex($base_url."/detail.php/".$data['slug']);
     print_r($ngindex);
 }
+

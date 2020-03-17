@@ -2,7 +2,7 @@
 
 $kata['saya'] = "gua";
 $kata["kamu"] = "luu";
-print_r($kata);
+// print_r($kata);
 // die;
 echo "<br>";
 $dataspin = file_get_contents('data/spinkata.json');
@@ -12,4 +12,4 @@ $kata = [];
 foreach ($dataspin as $key => $value) {
     $kata[key($value)] = array_values((array)$value)[0];
 }
-print_r($kata);
+print_r(json_encode($kata));

@@ -1,0 +1,323 @@
+[
+	{
+		"kata" : "kamu",
+		"sinonim" : "anda"
+	},
+	{
+		"kata" : "saya",
+		"sinonim" : "kami"
+	},
+	{
+		"kata" : "maka ",
+		"sinonim" : "jadi "
+	},
+	{
+		"kata" : "akan ",
+		"sinonim" : "mau "
+	},
+	{
+		"kata" : "semua",
+		"sinonim" : "seluruh"
+	},
+	{
+		"kata" : "sepertinya",
+		"sinonim" : "ibaratnya"
+	},
+	{
+		"kata" : "kami",
+		"sinonim" : "kita"
+	},
+	{
+		"kata" : "penting",
+		"sinonim" : "sangat penting"
+	},
+	{
+		"kata" : "untuk kamu",
+		"sinonim" : "untuk kita"
+	},
+	{
+		"kata" : "hubungan",
+		"sinonim" : "ikatan"
+	},
+	{
+		"kata" : "akhir pekan",
+		"sinonim" : "malam minggu"
+	},
+	{
+		"kata" : "mendapati ",
+		"sinonim" : "mendapatkan"
+	},
+	{
+		"kata" : "kesimpulan",
+		"sinonim" : "simpulan"
+	},
+	{
+		"kata" : "menggunakan ",
+		"sinonim" : "memakai"
+	},
+	{
+		"kata" : "total",
+		"sinonim" : "jumlah total"
+	},
+	{
+		"kata" : "kadang",
+		"sinonim" : "terkadang"
+	},
+	{
+		"kata" : "komentar",
+		"sinonim" : "tanggapan"
+	},
+	{
+		"kata" : "dimainkan",
+		"sinonim" : "memainkan"
+	},
+	{
+		"kata" : "gimana",
+		"sinonim" : "bagaimana"
+	},
+	{
+		"kata" : "sampai",
+		"sinonim" : "hingga"
+	},
+	{
+		"kata" : "hingga",
+		"sinonim" : "sampai"
+	},
+	{
+		"kata" : "seluruh",
+		"sinonim" : "semua"
+	},
+	{
+		"kata" : "tempat",
+		"sinonim" : "letak"
+	},
+	{
+		"kata" : "mengetahui ",
+		"sinonim" : "mengerti"
+	},
+	{
+		"kata" : "kalian",
+		"sinonim" : "kamu"
+	},
+	{
+		"kata" : "seperti",
+		"sinonim" : "layaknya"
+	},
+	{
+		"kata" : "dapatkan ",
+		"sinonim" : "mendapatkan"
+	},
+	{
+		"kata" : "sosial media",
+		"sinonim" : "sosmed"
+	},
+	{
+		"kata" : "bisa kita",
+		"sinonim" : "dapat kita"
+	},
+	{
+		"kata" : "total ",
+		"sinonim" : "jumlah"
+	},
+	{
+		"kata" : "anda",
+		"sinonim" : "kamu"
+	},
+	{
+		"kata" : "kami",
+		"sinonim" : "saya"
+	},
+	{
+		"kata" : "anda",
+		"sinonim" : "kamu"
+	},
+	{
+		"kata" : "kami",
+		"sinonim" : "saya"
+	},
+	{
+		"kata" : "jadi ",
+		"sinonim" : "maka "
+	},
+	{
+		"kata" : "mau ",
+		"sinonim" : "akan "
+	},
+	{
+		"kata" : "seluruh",
+		"sinonim" : "semua"
+	},
+	{
+		"kata" : "ibaratnya",
+		"sinonim" : "sepertinya"
+	},
+	{
+		"kata" : "kita",
+		"sinonim" : "kami"
+	},
+	{
+		"kata" : "sangat penting",
+		"sinonim" : "penting"
+	},
+	{
+		"kata" : "untuk kita",
+		"sinonim" : "untuk kamu"
+	},
+	{
+		"kata" : "ikatan",
+		"sinonim" : "hubungan"
+	},
+	{
+		"kata" : "malam minggu",
+		"sinonim" : "akhir pekan"
+	},
+	{
+		"kata" : "mendapatkan",
+		"sinonim" : "mendapati "
+	},
+	{
+		"kata" : "simpulan",
+		"sinonim" : "kesimpulan"
+	},
+	{
+		"kata" : "memakai",
+		"sinonim" : "menggunakan "
+	},
+	{
+		"kata" : "jumlah total",
+		"sinonim" : "total"
+	},
+	{
+		"kata" : "terkadang",
+		"sinonim" : "kadang"
+	},
+	{
+		"kata" : "tanggapan",
+		"sinonim" : "komentar"
+	},
+	{
+		"kata" : "memainkan",
+		"sinonim" : "dimainkan"
+	},
+	{
+		"kata" : "bagaimana",
+		"sinonim" : "gimana"
+	},
+	{
+		"kata" : "hingga",
+		"sinonim" : "sampai"
+	},
+	{
+		"kata" : "sampai",
+		"sinonim" : "hingga"
+	},
+	{
+		"kata" : "semua",
+		"sinonim" : "seluruh"
+	},
+	{
+		"kata" : "letak",
+		"sinonim" : "tempat"
+	},
+	{
+		"kata" : "mengerti",
+		"sinonim" : "mengetahui "
+	},
+	{
+		"kata" : "kamu",
+		"sinonim" : "kalian"
+	},
+	{
+		"kata" : "layaknya",
+		"sinonim" : "seperti"
+	},
+	{
+		"kata" : "mendapatkan",
+		"sinonim" : "dapatkan "
+	},
+	{
+		"kata" : "sosmed",
+		"sinonim" : "sosial media"
+	},
+	{
+		"kata" : "dapat kita",
+		"sinonim" : "bisa kita"
+	},
+	{
+		"kata" : "jumlah",
+		"sinonim" : "total "
+	},
+	{
+		"kata" : "kamu",
+		"sinonim" : "anda"
+	},
+	{
+		"kata" : "saya",
+		"sinonim" : "kami"
+	},
+	{
+		"kata" : "hapus",
+		"sinonim" : "delete"
+	},
+	{
+		"kata" : "bisa",
+		"sinonim" : "dapat"
+	},
+	{
+		"kata" : "Gunakan",
+		"sinonim" : "gunakanlah"
+	},
+	{
+		"kata" : "menjamin ",
+		"sinonim" : "menjamini"
+	},
+	{
+		"kata" : "namun",
+		"sinonim" : "tapi"
+	},
+	{
+		"kata" : "update ",
+		"sinonim" : "pembaruan"
+	},
+	{
+		"kata" : "diselenggarakan ",
+		"sinonim" : "dilakukan"
+	},
+	{
+		"kata" : "Dimulai ",
+		"sinonim" : "mulai"
+    },
+    {
+        "kata":"keluarkan ",
+        "sinonim":"mengeluarkan"
+    },
+    {
+        "kata":"dikabarkan ",
+        "sinonim":"diinformasikan"
+    },
+    {
+        "kata":"mengembangkan ",
+        "sinonim":"dalam pengembangan"
+    },
+    {
+        "kata":"game mobile",
+        "sinonim":"game android"
+    },
+    {
+        "kata":"saat ini",
+        "sinonim":"sekarang"
+    },
+    {
+        "kata":"aktivitas ",
+        "sinonim":"kegiatan"
+    },
+    {
+        "kata":"setelah",
+        "sinonim":"sesudah"
+    },
+    {
+        "kata":"script",
+        "sinonim":"source"
+    }
+
+]
