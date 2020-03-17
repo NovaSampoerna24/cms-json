@@ -3,18 +3,30 @@
 
 function getAll($start, $end){
     $data = artikel();
+    
     $artikel = [];
     foreach($data as $d){
         $artikel[] = $d;
     }
+    if($start == ""){
+        
+        $start = rand(3,sizeof($data)/2);
+    }
+    
     $data = array_slice($artikel,$start,$end);
-   
+//     print_r($data);
+//     foreach($data as $d){
+//         print_r($d['title']);
+//         echo "<br>";
+//     }
+//    die;
     $response = [
         'jumlah_semua'=>sizeof($artikel),
         'start'=>$start,
         'end'=>$end,
         'data'=>$data
     ];
+    // print_r($response);
     return json_encode($response);
 }
 function getDetail($id){

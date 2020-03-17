@@ -14,7 +14,12 @@ $end = @($_GET['end'])?$_GET['end']:9;
 
 $data =  json_decode(getAll($start,$end))->data;
 $dom = new Dom;
-
+$dom2 = new Dom;
+$deskripsi = "";
+$dom2->load($data[0]->content);
+$conte = $dom2->find('p');
+// $conte = preg_split('/\.|\?|!/',$conte);
+ $deskripsi = strip_tags($conte[0].$conte[1]);
 ?>
 <!DOCTYPE html>
 <html amp>
@@ -25,7 +30,7 @@ $dom = new Dom;
   <meta name="generator" content="Mobirise v4.7.0, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
-  <meta name="description" content="AMP Website News and Teams Template - Download Now - Space AMP">
+  <meta name="description" content="<?=$deskripsi?>">
   <title><?=config()['nama_aplikasi']." | ".config()['deskripsi']?></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="canonical" href="news-teams.html">
