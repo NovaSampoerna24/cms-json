@@ -1,16 +1,12 @@
 [
     {
-        "url":"https://gamebrott.com/",
-        "type":"wordpress"
+        "url":"https://www.gallerytekno.com",
+        "type":"blogger",
+        "idblog":"8482460619193367434"
     },
     {
-        "url":"https://bacacoding.blogspot.com/",
+        "url":"https://www.masalah.my.id",
         "type":"blogger",
-        "idblog":"7748640033295640944"
-    },
-    {
-        "url":"https://pengetahuandi.blogspot.com/",
-        "type":"blogger",
-        "idblog":"351199646441866677"
+        "idblog":"2038444769998834758"
     }
 ]

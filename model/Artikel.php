@@ -1,5 +1,9 @@
 <?php 
 
+function getAlls(){
+    $data = artikel();
+    return $data;
+}
 
 function getAll($start, $end){
     $data = artikel();

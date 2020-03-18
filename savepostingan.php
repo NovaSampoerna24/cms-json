@@ -37,7 +37,7 @@ function save($data){
     file_put_contents('data/tb_artikel.json', $json_data);
     
     $base_url = $GLOBALS['base_url'];
-    $ngindex = ngindex($base_url."/detail.php/".$data['slug']);
-    print_r($ngindex);
+    // $ngindex = ngindex($base_url."/detail.php/".$data['slug']);
+    // print_r($ngindex);
 }
 

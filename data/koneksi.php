@@ -1,5 +1,5 @@
 <?php 
-$base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+$base_url =  "http://" . $_SERVER['SERVER_NAME']."/clonerblog";
 
 function database(){
     $base_url = $GLOBALS['base_url'];
@@ -189,7 +189,8 @@ function ngindex2($url){
 }
 
 function aduk($content,$sumber){
-
+    
+    
     $dataspin = file_get_contents('data/sinonim.json');
     $dataspin = json_decode($dataspin);
     // print_r($dataspin);
@@ -199,10 +200,12 @@ function aduk($content,$sumber){
     }
 
     $sumbere = hapusurl($sumber);
-    $kata[$sumbere] = '';
-    $kata[strtoupper($sumbere)] ='';
-    $kata[strtolower($sumbere)] = '';
-    $kata[ucfirst($sumbere)] = '';
+    $kata[$sumber] = '#';
+    $kata[$sumbere] = hapusurl($GLOBALS['base_url']);
+    $kata[strtoupper($sumbere)] = hapusurl($GLOBALS['base_url']);
+    $kata[strtolower($sumbere)] = hapusurl($GLOBALS['base_url']);
+    $kata[ucfirst($sumbere)] = hapusurl($GLOBALS['base_url']);
+    
     
     $data = spin($content,$kata);
     return $data;

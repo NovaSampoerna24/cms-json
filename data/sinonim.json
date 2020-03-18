@@ -318,6 +318,14 @@
     {
         "kata":"script",
         "sinonim":"source"
-    }
+	},
+	{
+        "kata":"caranya",
+        "sinonim":"dengan cara"
+	},
+	{
+		"kata":"situs",
+		"sinonim":"website"
+	}
 
 ]

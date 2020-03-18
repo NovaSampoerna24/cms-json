@@ -1,7 +1,7 @@
 {
     "base_url"      : "https://gamengroot.herokuapp.com/",
-    "nama_aplikasi" : "Ngroot Game",
-    "deskripsi"     : "Cara mendapat informasi game terbaru",
+    "nama_aplikasi" : "Cloner Blog",
+    "deskripsi"     : "Informasi Cepat dan tergila",
     "url_database"  : "data/tb_artikel.json",
     "akun_layanan"  : "data/akunlayanan.json"
 }
