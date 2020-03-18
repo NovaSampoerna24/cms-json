@@ -360,7 +360,7 @@ author: aghassemi
         <script type="application/json">
 {
           "vars": {
-            "account": "UA-160651157-1"
+            "account": "UA-160651157-4"
           },
           "triggers": {
             "default pageview": {
