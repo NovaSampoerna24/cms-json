@@ -11,7 +11,7 @@ if($_POST){
         $idblogger = @$_POST['idblog'];
         $data = getpostblogger($idblogger,10,$url);
         foreach ($data as $key => $value) {
-            $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
+            $base_url = $GLOBALS['base_url'];
             $response = curlpost($base_url."/savepostingan.php",$value);
           
             
@@ -19,7 +19,7 @@ if($_POST){
     }else if($type == "wordpress"){
         $data = getpostinganwordpress($url,10);
         foreach ($data as $key => $value) {
-            $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
+            $base_url = $GLOBALS['base_url'];
             $response = curlpost($base_url."/savepostingan.php",$value);
          
 

@@ -36,7 +36,7 @@ function save($data){
     $json_data = json_encode($artikel);
     file_put_contents('data/tb_artikel.json', $json_data);
     
-    $base_url =  "http://" . $_SERVER['SERVER_NAME']."/gamengroot";
+    $base_url = $GLOBALS['base_url'];
     $ngindex = ngindex($base_url."/detail.php/".$data['slug']);
     print_r($ngindex);
 }
