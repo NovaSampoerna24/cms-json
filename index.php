@@ -18,7 +18,7 @@ $dom2 = new Dom;
 $deskripsi = "";
 $dom2->load($data[0]->content);
 $conte = $dom2->find('p');
-// $conte = preg_split('/\.|\?|!/',$conte);
+$conte = preg_split('/\.|\?|!/',$data[0]->content);
  $deskripsi = strip_tags($conte[0].$conte[1]);
 ?>
 <!DOCTYPE html>

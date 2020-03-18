@@ -1,5 +1,5 @@
 <?php 
-$base_url =  "http://" . $_SERVER['SERVER_NAME']."";
+$base_url =  "http://" . $_SERVER['SERVER_NAME']."/clonerblog";
 
 function database(){
     $base_url = $GLOBALS['base_url'];
