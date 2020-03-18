@@ -1,6 +1,6 @@
 {
     "base_url"      : "https://gamengroot.herokuapp.com/",
-    "nama_aplikasi" : "Cloner Blog",
+    "nama_aplikasi" : "Patekan",
     "deskripsi"     : "Informasi Cepat dan tergila",
     "url_database"  : "data/tb_artikel.json",
     "akun_layanan"  : "data/akunlayanan.json"

@@ -52,7 +52,7 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
   
 </head>
 <body><amp-sidebar id="sidebar" class="cid-qP6hlKXjUE" layout="nodisplay" side="right">
-		<div class="builder-sidebar" id="builder-sidebar">
+		<div class="builder-sidebar" id="builder-sidebar" style="display:none;">
 			<button on="tap:sidebar.close" class="close-sidebar">
 			<span></span>
 			<span></span>
@@ -95,7 +95,7 @@ div,span,h1,h2,h3,h4,h5,h6,p,blockquote,a,ol,ul,li,figcaption,textarea,input{fon
 			</div>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				
-				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+				<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true" style="display:none;">
         <li class="nav-item">
 						<a class="nav-link link mbr-black text-black display-3" href="#"></a>
 					</li>
